@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script tpye="text/javascript">
+			window.onload = function(){
+				var oldObj = document.getElementById("username");
+				var newObj = document.getElementById("show");
+				
+				oldObj.onblur=function(){
+					newObj.value = oldObj.value;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<span>用户名：<input type="text" id="username"></span>
+		
+		<hr>
+		
+		<span>所以您的用户名为：<input type="text" id="show"></span>
+	</body>
+	
+</html>
